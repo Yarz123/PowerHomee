@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icon_account" />
+
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/e_mail"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/round_corner"
+                android:padding="12dp"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@android:drawable/ic_dialog_email"/>
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner"
+                android:hint="@string/mot_de_passe"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                android:drawableStart="@android:drawable/ic_lock_lock"/>
+
+            <Button
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mot_de_passe_oubli"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:padding="5dp"/>
+
+            <Button
+                android:id="@+id/login_btn"                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/se_connecter"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/lineTop"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvOr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ou"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/lineTop"
+                app:layout_constraintBottom_toTopOf="@id/lineBottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:id="@+id/lineBottom"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvOr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account_text"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:focusable="true"/>
+            <Button
+                android:id="@+id/create_account_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cr_er_un_compte"
+                android:textColor="@color/indigo"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnGoogleLogin"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/icon_google"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"/>
+
+                <ImageButton
+                    android:id="@+id/btnLinkedInLogin"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/icon_linkedin"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"/>
+
+                <ImageButton
+                    android:id="@+id/btnMetaLogin"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/icon_meta"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_account_text">" ¿Qué hay de nuevo en PowerHome? "</string>
+    <string name="mot_de_passe_oubli">OLVIDÓ SU CONTRASEÑA ?</string>
+    <string name="mot_de_passe">contraseña</string>
+    <string name="se_connecter_via_linkedin">Iniciar sesión a través de LinkedIn</string>
+    <string name="cree_un_compte">CREA UNA CUENTA</string>
+    <string name="ou">O</string>
+    <string name="se_connecter">Iniciar Sesión</string>
+    <string name="pr_nom">Nombre</string>
+    <string name="l_name">Apellido</string>
+    <string name="mobile">Móvil</string>
+    <string name="cr_er_un_compte">Crear une cuenta</string>
+    <string name="create_account_btn">Crear una cuenta</string>
+    <string name="nouveau_mot_de_passe">Entrez un nouveau mot de passe</string>
+    <string name="confirmer_mot_de_passe">Confimer le mot de passe</string>
+    <string name="envoyer">Confirmer</string>
+    <string name="retour_connexion">Retourner à la connexion</string>
+</resources>

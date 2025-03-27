@@ -1,0 +1,19 @@
+<resources>
+    <string name="create_account_text">New in PowerHome?</string>
+    <string name="mot_de_passe">Password</string>
+    <string name="se_connecter_via_linkedin">Connect via LinkedIn</string>
+    <string name="cree_un_compte">CREATE AN ACCOUNT</string>
+    <string name="ou">OR</string>
+    <string name="se_connecter">Log In</string>
+    <string name="mot_de_passe_oubli">FORGOT PASSWORD ?</string>
+    <string name="pr_nom">First name</string>
+    <string name="l_name">Last name</string>
+    <string name="mobile">Mobile</string>
+    <string name="cr_er_un_compte">Create an account</string>
+    <string name="create_account_btn">Create an account</string>
+    <string name="nouveau_mot_de_passe">Entrez un nouveau mot de passe</string>
+    <string name="confirmer_mot_de_passe">Confimer le mot de passe</string>
+    <string name="envoyer">Confirmer</string>
+    <string name="retour_connexion">Retourner à la connexion</string>
+
+</resources>
