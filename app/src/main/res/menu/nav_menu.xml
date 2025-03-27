@@ -6,4 +6,11 @@
     <item
         android:id="@+id/nav_second"
         android:title="@string/second_item" />
+    <item
+        android:id="@+id/nav_third"
+        android:title="@string/third_item" />
+    <item
+        android:id="@+id/nav_fourth"
+        android:title="@string/nav_fourth_item" />
+
 </menu>

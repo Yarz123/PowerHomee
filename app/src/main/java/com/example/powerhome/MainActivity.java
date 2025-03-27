@@ -101,9 +101,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_first) {
             fm.beginTransaction().replace(R.id.contentFL, new MonHabitatFragment()).commit();
         } else if (id == R.id.nav_second) {
-            fm.beginTransaction().replace(R.id.contentFL, new MesRequetesFragment()).commit();
+            fm.beginTransaction().replace(R.id.contentFL, new ParametresFragment()).commit();
         }
-
+        else if (id == R.id.nav_third) {
+            fm.beginTransaction().replace(R.id.contentFL, new MesNotificationsFragment()).commit();
+        }
+        else if (id == R.id.nav_fourth) {
+            fm.beginTransaction().replace(R.id.contentFL, new MesPreferencesFragment()).commit();
+        }
         drawerDL.closeDrawer(GravityCompat.START);
         return true;
     }
